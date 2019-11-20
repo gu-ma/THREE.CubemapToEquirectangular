@@ -60,7 +60,7 @@ and manage all your scene update and rendering. When you want to export a panora
 ```js
 // this is where the developer updates the scene and creates a cubemap of the scene
 cubeCamera.position.copy( camera.position );
-cubeCamera.updateCubeMap( renderer, scene );
+cubeCamera.update( renderer, scene );
 
 // call this to convert the cubemap rendertarget to a panorama
 equiUnmanaged.convert( cubeCamera );

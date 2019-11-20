@@ -74,7 +74,7 @@ function init() {
 	document.getElementById( 'capture' ).addEventListener( 'click', function( e ) {
 
 		cubeCamera.position.copy( camera.position );
-		cubeCamera.updateCubeMap( renderer, scene );
+		cubeCamera.update( renderer, scene );
 		equi.convert( cubeCamera );
 
 	} );
